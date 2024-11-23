@@ -1,7 +1,10 @@
 @import "./hamger-menu.css";
 
-/*  font-family: "Raleway", sans-serif;
+/* 
+    font-family: "Raleway", sans-serif;
     font-family: "Roboto", sans-serif;
+    font-family: "Playfair Display", serif;
+
 */
 
 body{
@@ -131,5 +134,47 @@ a{
 @media (max-width:768px){
     .rim_number{
         display: none;
+    }
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.photo_text{
+    color: #D4C17F;
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    font-weight: 100;
+    margin-top: 120px;
+}
+.photo_cell{
+    position: relative;
+}
+.photo_cell img{
+    
+    max-width: 535px;
+    max-height: 320px;
+}
+.photo_cell p{
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px; 
+    left: 30px;
+}
+@media (max-width:768px){
+    .photo{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .photo_cell img{
+        max-width: 110%;
+        max-height: 90%;
+    }
+    .photo_text{
+        text-align: center;
     }
 }
