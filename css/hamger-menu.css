@@ -24,7 +24,7 @@
     width: 26px;
     height: 26px;
     cursor: pointer;
-    margin-left: 110px;
+    margin-left: -1px;
     z-index: 1;
   }
   .menu__btn > span,
